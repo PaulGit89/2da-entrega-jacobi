@@ -1,0 +1,186 @@
+/* reset */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* estilos de header */
+
+header{
+    background-image: url(../img/castillo.jpg);
+    padding-bottom: 30px;
+    background-size: cover;
+    background-position: center;
+    position: sticky;
+    top: 0px;
+    margin-top: 0px;
+}
+    
+
+header h1{
+    text-align: center;
+    color: aliceblue;
+    text-transform: uppercase;
+     margin-bottom: 30px;
+}
+
+header nav ul{
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li a{
+    color: aliceblue;
+    font-size: larger;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+main p{
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.imagen1{
+    margin: 20px;
+}
+
+main h2{
+    margin: 30px 100px 30px 100px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: rgb(156, 156, 185);
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 60px;
+    box-shadow: 10px 10px 20px black;
+}
+
+main h3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+p{
+    margin: 20px;
+}
+
+footer{
+    margin-top: 90px;
+}
+
+/* estilo de formulario */
+
+.news{
+    margin-top: 100px;
+    margin-left: 250px;
+    margin-right: 250px;
+    background-color: tomato;
+}
+
+.form{
+    margin: 15px;
+}
+
+.formulario{
+    margin-top: 70px;
+}
+
+/* flex */
+
+.autora{
+    display: flex;
+    gap: 20px;
+}
+
+.autora .p-uno, .p-dos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.ppal1{
+    display: flex;
+    align-items: center;
+}
+
+.ppal3{
+    margin: 20px;
+    width: 50%;
+}
+
+/* grid */
+
+.protagonistas{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.p1, .p2, .p3, .p4, .p5{
+    margin: 20px;
+}
+
+.libros{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.l1, .l2, .l3, .l4, .l5, .l6, .l7{
+    margin: 20px;
+}
+
+/* mq de tablet */
+
+@media screen and (min-width: 770px){
+    .protagonistas{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .protagonistas .p5{
+        grid-column: span 2;
+    }
+
+    .libros{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .libros .l7{
+        grid-column: span 2;
+    }
+}
+
+/* mq de desktop */
+
+@media screen and (min-width: 1024px){
+    .protagonistas{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .protagonistas .p4{
+        grid-column: span 1.5;
+    }
+    .protagonistas .p5{
+        grid-column: span 1.5;
+    }
+
+    .libros{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .libros .l7{
+        grid-column: span 2;
+    }
+}
+
+
+
+
+
